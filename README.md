@@ -1,9 +1,9 @@
 # Kibana 4 - Beta 3 Container
 
 ## Overview
-This repository fetches the latest official build of Kibana 4 and packages it up into a docker container.
+This repository fetches the latest official build of [Kibana 4](http://www.elasticsearch.org/overview/kibana/) and packages it up into a docker container. It powers an automated build on the official Docker Hub
 
-The container tries to make Kibana more 12-factor, by overwriting the configuration file with values specified in the environment.
+The container tries to make Kibana more [12-factor](http://12factor.net/), by overwriting the configuration file with values specified in the environment.
 
 ## Usage
 ### Prebuilt image
