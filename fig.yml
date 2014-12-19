@@ -1,6 +1,0 @@
-kibana:
-    build: .
-    ports:
-        - "80:5601"
-    environment:
-        - "ELASTICSEARCH=https://67wd6mnh:alksjhzbb32y1xp9@pine-6758428.us-east-1.bonsai.io:443/"
