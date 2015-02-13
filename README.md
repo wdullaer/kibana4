@@ -1,4 +1,4 @@
-# Kibana 4 - Beta 3 Container
+# Kibana 4 - RC 1 Container
 
 ## Overview
 This repository fetches the latest official build of [Kibana 4](http://www.elasticsearch.org/overview/kibana/) and packages it up into a docker container. It powers an automated build on the official Docker Hub.
@@ -28,6 +28,9 @@ docker run -p 80:5601 kibana4
 * `$PORT` Port on which the Kibana server will listen (default: 5601)
 * `$HOST` Ip address on which the Kibana server will bind (default: 0.0.0.0)
 * `$VERIFY_SSL` Do strict certificate validation on ssl connections (default: true)
+* `$ELASTICSEARCH_PRESERVE_HOST` If true, send the Elasticsearch hostname. If false, send the hostname of *this* Kibana instance. (default: false)
 * `$ELASTICSEARCH` Connection string (URL + port) of the elasticsearch cluster (default: http://localhost:9200)
 * `$ELASTICSEARCH_PORT_9200_TCP_ADDR` URL of the Elasticsearch cluster. Useful when linking in an Elasticsearch Docker container. Unused if `$ELASTICSEARCH` is set. (default: localhost)
 * `$ELASTICSEARCH_PORT_9200_TCP_PORT` Port of the Elasticsearch cluster. Useful when linking in an Elasticsearch Docker container. Unused if `$ELASTICSEARCH` is set. (default: 9200)
+* `$BASIC_AUTH_USERNAME` Username for a basic auth protected Elasticsearch cluster. (no basic auth by default)
+* `$BASIC_AUTH_PASSWORD` Password for a basic auth protected Elasticsearch cluster. (no basic auth by default) 
