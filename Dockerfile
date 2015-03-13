@@ -12,11 +12,11 @@ RUN apt-get install -y wget
 
 # Download Kibana 4
 WORKDIR /tmp
-RUN wget 'https://download.elasticsearch.org/kibana/kibana/kibana-4.0.0-linux-x64.tar.gz'
+RUN wget 'https://download.elasticsearch.org/kibana/kibana/kibana-4.0.1-linux-x64.tar.gz'
 
 # Extract and install Kibana 4
-RUN tar xvf "kibana-4.0.0-linux-x64.tar.gz" &&\
-    mv /tmp/kibana-4.0.0-linux-x64/ /opt/kibana/
+RUN tar xvf "kibana-4.0.1-linux-x64.tar.gz" &&\
+    mv /tmp/kibana-4.0.1-linux-x64/ /opt/kibana/
 
 # Add the wrapper startup script
 ADD dockerizedStartup.sh /opt/kibana/bin/dockerizedStartup.sh
