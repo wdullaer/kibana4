@@ -1,4 +1,4 @@
-# Kibana 4 - RC 1 Container
+# Kibana 4
 
 ## Overview
 This repository fetches the latest official build of [Kibana 4](http://www.elasticsearch.org/overview/kibana/) and packages it up into a docker container. It powers an automated build on the official Docker Hub.
